@@ -1,0 +1,34 @@
+[22,27,16,2,18,6] dizisine Insertion Sort aşamalarını yazalım.
+1. Adım: Listenin ikinci elemanından başlayarak döngüye girilir. İlk elemanı 22, ikinci elemanı 27 ile karşılaştırılır ve 22 < 27 olduğu için yer değiştirme işlemi yapılmaz.
+        [22, 27, 16, 2, 18, 6]
+Karşılaştırmaya devam edelim.
+2. Adım: [16, 22, 27, 2, 18, 6] 
+3. Adım: [2, 16, 22, 27, 18, 6] 
+4. Adım: [2, 16, 18, 22, 27, 6] 
+5. Adım: [2, 6, 16, 18, 22, 27] 
+
+Big-O Gösterimi: Insertion Sort'un Big-O gösterimi O(n^2)'dir.
+
+Time Complexity:
+
+Average Case: Aradığımız sayının (18) ortada olması durumunda, her seferinde n/2 ortalama karşılaştırma yapılır. 
+Bu durumda, average case time complexity O(n^2/2)'dir, ancak Big-O notasyonunda katsayılar ve daha düşük dereceli
+terimler genellikle ihmal edildiği için yine de O(n^2) olarak ifade edilir.
+
+Worst Case: Aradığımız sayının sonda olması durumunda, her seferinde n-1 karşılaştırma yapılır ve bu durumda time complexity O(n^2)'dir.
+
+Best Case: Aradığımız sayının dizinin en başında olması durumunda, her seferinde sadece bir karşılaştırma yapılır ve bu durumda time complexity O(n)'dir.
+
+Yani, 18 sayısı için:
+Average Case: O(n^2)
+Worst Case: O(n^2)
+Best Case: O(n)
+Bu durumda, 18 sayısı için Average Case ve Worst Case aynıdır, her ikisi de O(n^2)'dir.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Verilen dizi: [7, 3, 5, 8, 2, 9, 4, 15, 6]
+
+1. Adım: Dizideki en küçük elemanı bulup ilk elemanla yer değiştirme:  2 -> 7  :    [2, 3, 5, 8, 7, 9, 4, 15, 6]
+2. Adım: Dizinin ikinci elemanından başlayarak tekrar en küçük elemanı bulup ikinci elemanla yer değiştirme:  3 değişmez  :    [2, 3, 5, 8, 7, 9, 4, 15, 6]
+3.Adım:  4 -> 5  :    [2, 3, 4, 8, 7, 9, 5, 15, 6]
+4. Adım: 5 -> 8  :    [2, 3, 4, 5, 7, 9, 8, 15, 6]
+Bu şekilde devam eder.
